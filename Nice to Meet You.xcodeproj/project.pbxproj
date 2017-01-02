@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FF765BB1E1AD51000AA8DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF765BA1E1AD51000AA8DDF /* AppDelegate.swift */; };
+		7FF765BD1E1AD51000AA8DDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF765BC1E1AD51000AA8DDF /* ViewController.swift */; };
+		7FF765C01E1AD51000AA8DDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF765BE1E1AD51000AA8DDF /* Main.storyboard */; };
+		7FF765C21E1AD51000AA8DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF765C11E1AD51000AA8DDF /* Assets.xcassets */; };
+		7FF765C51E1AD51000AA8DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF765C31E1AD51000AA8DDF /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7FF765B71E1AD51000AA8DDF /* Nice to Meet You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nice to Meet You.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF765BA1E1AD51000AA8DDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7FF765BC1E1AD51000AA8DDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FF765BF1E1AD51000AA8DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7FF765C11E1AD51000AA8DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FF765C41E1AD51000AA8DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FF765C61E1AD51000AA8DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FF765B41E1AD50D00AA8DDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FF765AE1E1AD50D00AA8DDF = {
+			isa = PBXGroup;
+			children = (
+				7FF765B91E1AD51000AA8DDF /* Nice to Meet You */,
+				7FF765B81E1AD51000AA8DDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FF765B81E1AD51000AA8DDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FF765B71E1AD51000AA8DDF /* Nice to Meet You.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FF765B91E1AD51000AA8DDF /* Nice to Meet You */ = {
+			isa = PBXGroup;
+			children = (
+				7FF765BA1E1AD51000AA8DDF /* AppDelegate.swift */,
+				7FF765BC1E1AD51000AA8DDF /* ViewController.swift */,
+				7FF765BE1E1AD51000AA8DDF /* Main.storyboard */,
+				7FF765C11E1AD51000AA8DDF /* Assets.xcassets */,
+				7FF765C31E1AD51000AA8DDF /* LaunchScreen.storyboard */,
+				7FF765C61E1AD51000AA8DDF /* Info.plist */,
+			);
+			path = "Nice to Meet You";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FF765B61E1AD50D00AA8DDF /* Nice to Meet You */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF765C91E1AD51000AA8DDF /* Build configuration list for PBXNativeTarget "Nice to Meet You" */;
+			buildPhases = (
+				7FF765B31E1AD50D00AA8DDF /* Sources */,
+				7FF765B41E1AD50D00AA8DDF /* Frameworks */,
+				7FF765B51E1AD50D00AA8DDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nice to Meet You";
+			productName = "Nice to Meet You";
+			productReference = 7FF765B71E1AD51000AA8DDF /* Nice to Meet You.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FF765AF1E1AD50D00AA8DDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ike Mattice";
+				TargetAttributes = {
+					7FF765B61E1AD50D00AA8DDF = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = VNA55J4REY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7FF765B21E1AD50D00AA8DDF /* Build configuration list for PBXProject "Nice to Meet You" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FF765AE1E1AD50D00AA8DDF;
+			productRefGroup = 7FF765B81E1AD51000AA8DDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FF765B61E1AD50D00AA8DDF /* Nice to Meet You */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FF765B51E1AD50D00AA8DDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF765C51E1AD51000AA8DDF /* LaunchScreen.storyboard in Resources */,
+				7FF765C21E1AD51000AA8DDF /* Assets.xcassets in Resources */,
+				7FF765C01E1AD51000AA8DDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FF765B31E1AD50D00AA8DDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF765BD1E1AD51000AA8DDF /* ViewController.swift in Sources */,
+				7FF765BB1E1AD51000AA8DDF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7FF765BE1E1AD51000AA8DDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FF765BF1E1AD51000AA8DDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7FF765C31E1AD51000AA8DDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FF765C41E1AD51000AA8DDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FF765C71E1AD51000AA8DDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7FF765C81E1AD51000AA8DDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FF765CA1E1AD51000AA8DDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VNA55J4REY;
+				INFOPLIST_FILE = "Nice to Meet You/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.ikemattice.Nice-to-Meet-You";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7FF765CB1E1AD51000AA8DDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VNA55J4REY;
+				INFOPLIST_FILE = "Nice to Meet You/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.ikemattice.Nice-to-Meet-You";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FF765B21E1AD50D00AA8DDF /* Build configuration list for PBXProject "Nice to Meet You" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF765C71E1AD51000AA8DDF /* Debug */,
+				7FF765C81E1AD51000AA8DDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF765C91E1AD51000AA8DDF /* Build configuration list for PBXNativeTarget "Nice to Meet You" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF765CA1E1AD51000AA8DDF /* Debug */,
+				7FF765CB1E1AD51000AA8DDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FF765AF1E1AD50D00AA8DDF /* Project object */;
+}
