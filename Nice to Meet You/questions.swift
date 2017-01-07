@@ -7,17 +7,28 @@
 //
 
 var questions: [String] = [
+    "What do you value most in a friendship?",
+    "What is one of your pet peeves?",
+    "If you were a ghost, what would you do?",
+    "When do you feel the most confident and why?",
+//]
+
+//var photoQuestions = [
     "What is the one thing you would like to change about yourself?",
-    "Which parent are you closer to and why?",
+    "What is on your bucket list for the next 365 days?",
     "What is an ideal weekend for you?",
+    "If you had to choose to live without one of your five senses, which would you give up?",
+    "What is your idea of the perfect first date?",
+//  ]
+
+//var morequestions = [
+    "Which parent are you closer to and why?",
     "When was the last time you broke someone’s heart?",
     "What is the one thing that people always misunderstand about you?",
     "What did your past relationship teach you?",
-    "What is on your bucket list for the next 365 days?",
     "If a genie granted you 3 wishes right now, what would you wish for?",
     "What is something that you regret?",
     "What do you think about when you’re by yourself?",
-    "If you had to choose to live without one of your five senses, which would you give up?",
     "If you could get away with one crime, would you?  What would it be?",
     "What animal best represents you?  What charactoristics do you share?",
     "Where would you like to see yourself in 5 years?",
@@ -46,7 +57,6 @@ var questions: [String] = [
     "Describe the worst roommate you've ever had.",
     "How would you describe yourself in 5 words?  No more.  No less.",
     "What is your worst habit?",
-    "What is your idea of the perfect first date?",
     "What is the weirdest talent that you have?",
     
     "Would you rather read an eBook or a paper book?  Why?",
@@ -65,21 +75,17 @@ var questions: [String] = [
     "What has been your favorite challenge?",
     "What is one thing that should be taught in school that isn't already?",
     "What are 5 things someone would immediately notice if they walked in your front door?",
-    "If you were a ghost, what would you do?",
     "What was your upbringing like?",
     "What's on your bucket list?",
     "What makes you wildly happy?",
     "What are your top 3 fears?",
     "Which parent are you most like?",
-    "When do you feel the most confident and why?",
     "What has been your most recent big life change?",
-    "What is one of your pet peeves?",
     "How do you handle anger?",
-    "Given the choise of anyone in the world, whom would you want as a dinner guest?",
+    "Given the choice of anyone in the world, whom would you want as a dinner guest?",
     "Would you like to be famous?  In what way?",
     "When did you last sing to yourself?  When did you last sing to someone else?",
     "If you could change anything about the way you were raised, what would it be?",
-    "What do you value most in a friendship?",
     "Alternate sharing 5 characteristics you look for in a friend or partner.",
     "Alternate sharing 5 positive features about each other.",
     "How close is your family?",
@@ -89,7 +95,7 @@ var questions: [String] = [
     "When did you last cry in front of another person?  By yourself?  Why?",
     "Share something you like about each other already.",
     "Share a personal problem and ask each other for advice on how to handle it.",
-    "While on a trip to another city, your spouse/lover meets and spends a night with an exciting stranger. Given that they will never meet again, and could never otherwise learn of the incident, would you want your partner to tell you about it?",
+    //"While on a trip to another city, your spouse/lover meets and spends a night with an exciting stranger. Given that they will never meet again, and could never otherwise learn of the incident, would you want your partner to tell you about it?",
     "What is the biggest complaint about your job?",
     "Have you ever had a nickname?  What is it and how did you obtain it?",
     "What is the craziest thing you've ever done in the name of love?",
@@ -109,4 +115,5 @@ var questions: [String] = [
     "What is the biggest character turn-off for you?",
     "What is the hardest thing you have ever done?",
     "Would you rather lose all of your memories or never be able to make new ones?",
+
 ]

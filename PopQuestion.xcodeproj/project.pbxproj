@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		593690DE1E1AFBB000CF8D80 /* backgroundColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backgroundColors.swift; sourceTree = "<group>"; };
-		7FF765B71E1AD51000AA8DDF /* Nice to Meet You.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nice to Meet You.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF765B71E1AD51000AA8DDF /* PopQuestion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopQuestion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF765BA1E1AD51000AA8DDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FF765BC1E1AD51000AA8DDF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7FF765BF1E1AD51000AA8DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		7FF765B81E1AD51000AA8DDF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FF765B71E1AD51000AA8DDF /* Nice to Meet You.app */,
+				7FF765B71E1AD51000AA8DDF /* PopQuestion.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7FF765B61E1AD50D00AA8DDF /* Nice to Meet You */ = {
+		7FF765B61E1AD50D00AA8DDF /* PopQuestion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FF765C91E1AD51000AA8DDF /* Build configuration list for PBXNativeTarget "Nice to Meet You" */;
+			buildConfigurationList = 7FF765C91E1AD51000AA8DDF /* Build configuration list for PBXNativeTarget "PopQuestion" */;
 			buildPhases = (
 				7FF765B31E1AD50D00AA8DDF /* Sources */,
 				7FF765B41E1AD50D00AA8DDF /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = "Nice to Meet You";
+			name = PopQuestion;
 			productName = "Nice to Meet You";
-			productReference = 7FF765B71E1AD51000AA8DDF /* Nice to Meet You.app */;
+			productReference = 7FF765B71E1AD51000AA8DDF /* PopQuestion.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,12 +110,12 @@
 				TargetAttributes = {
 					7FF765B61E1AD50D00AA8DDF = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = VNA55J4REY;
+						DevelopmentTeam = WZV594TB5J;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 7FF765B21E1AD50D00AA8DDF /* Build configuration list for PBXProject "Nice to Meet You" */;
+			buildConfigurationList = 7FF765B21E1AD50D00AA8DDF /* Build configuration list for PBXProject "PopQuestion" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -128,7 +128,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FF765B61E1AD50D00AA8DDF /* Nice to Meet You */,
+				7FF765B61E1AD50D00AA8DDF /* PopQuestion */,
 			);
 		};
 /* End PBXProject section */
@@ -275,10 +275,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VNA55J4REY;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Mattice (3975QUNH8Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WZV594TB5J;
 				INFOPLIST_FILE = "Nice to Meet You/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.ikemattice.Nice-to-Meet-You";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikemattice.PopQuestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -288,10 +291,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VNA55J4REY;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Mattice (3975QUNH8Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WZV594TB5J;
 				INFOPLIST_FILE = "Nice to Meet You/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.ikemattice.Nice-to-Meet-You";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikemattice.PopQuestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -300,7 +306,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FF765B21E1AD50D00AA8DDF /* Build configuration list for PBXProject "Nice to Meet You" */ = {
+		7FF765B21E1AD50D00AA8DDF /* Build configuration list for PBXProject "PopQuestion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FF765C71E1AD51000AA8DDF /* Debug */,
@@ -309,7 +315,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FF765C91E1AD51000AA8DDF /* Build configuration list for PBXNativeTarget "Nice to Meet You" */ = {
+		7FF765C91E1AD51000AA8DDF /* Build configuration list for PBXNativeTarget "PopQuestion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FF765CA1E1AD51000AA8DDF /* Debug */,

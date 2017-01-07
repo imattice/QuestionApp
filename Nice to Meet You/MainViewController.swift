@@ -12,7 +12,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var buttonLabel: UIButton!
 
-    var answeredQuestions: [String] = []
+    var sessionQuestions: [String] = questions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,15 +43,19 @@ class MainViewController: UIViewController {
 
 extension MainViewController {
     func getQuestion(previousQuestion: String?) {
-        let randomIndex = Int(arc4random_uniform(UInt32(questions.count)))
+        let randomIndex = Int(arc4random_uniform(UInt32(sessionQuestions.count)))
             
-        let question = questions[randomIndex]
-        print("question: \(question)  previous question: \(previousQuestion)")
+        let question = sessionQuestions[randomIndex]
+        //if question was the previous question, choose a new question
         if previousQuestion != nil, question == previousQuestion {
             print("question was the same")
-            print("chosen question: \(question)  previous question: \(previousQuestion)")
             getQuestion(previousQuestion: previousQuestion)
         } else {
+            sessionQuestions.remove(at: randomIndex)
+            if sessionQuestions.count == 0 {
+                sessionQuestions = questions
+                print("questions refreshed")
+            }
             self.updateQuestionLabel(withCurrentQuestion: question)
         }
     }
@@ -62,7 +66,6 @@ extension MainViewController {
         
         if previousColor != nil, color == previousColor! {
             print("color was the same")
-            print("chosen color: \(color)  previousColor: \(previousColor)")
             setBackgroundColor(previousColor: color)
         } else {
             self.view.backgroundColor = color

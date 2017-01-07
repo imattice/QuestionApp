@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7FF765B61E1AD50D00AA8DDF"
-               BuildableName = "Nice to Meet You.app"
-               BlueprintName = "Nice to Meet You"
-               ReferencedContainer = "container:Nice to Meet You.xcodeproj">
+               BuildableName = "PopQuestion.app"
+               BlueprintName = "PopQuestion"
+               ReferencedContainer = "container:PopQuestion.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7FF765B61E1AD50D00AA8DDF"
-            BuildableName = "Nice to Meet You.app"
-            BlueprintName = "Nice to Meet You"
-            ReferencedContainer = "container:Nice to Meet You.xcodeproj">
+            BuildableName = "PopQuestion.app"
+            BlueprintName = "PopQuestion"
+            ReferencedContainer = "container:PopQuestion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7FF765B61E1AD50D00AA8DDF"
-            BuildableName = "Nice to Meet You.app"
-            BlueprintName = "Nice to Meet You"
-            ReferencedContainer = "container:Nice to Meet You.xcodeproj">
+            BuildableName = "PopQuestion.app"
+            BlueprintName = "PopQuestion"
+            ReferencedContainer = "container:PopQuestion.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7FF765B61E1AD50D00AA8DDF"
-            BuildableName = "Nice to Meet You.app"
-            BlueprintName = "Nice to Meet You"
-            ReferencedContainer = "container:Nice to Meet You.xcodeproj">
+            BuildableName = "PopQuestion.app"
+            BlueprintName = "PopQuestion"
+            ReferencedContainer = "container:PopQuestion.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
