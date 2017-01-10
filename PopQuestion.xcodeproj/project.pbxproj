@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		59642B481E21BB6A001C7008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59642B471E21BB6A001C7008 /* AppDelegate.swift */; };
-		59642B4A1E21BB6A001C7008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59642B491E21BB6A001C7008 /* ViewController.swift */; };
 		59642B4D1E21BB6A001C7008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59642B4B1E21BB6A001C7008 /* Main.storyboard */; };
 		59642B4F1E21BB6A001C7008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59642B4E1E21BB6A001C7008 /* Assets.xcassets */; };
-		59642B521E21BB6A001C7008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59642B501E21BB6A001C7008 /* LaunchScreen.storyboard */; };
+		59642B5C1E21BBE2001C7008 /* backgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59642B591E21BBE2001C7008 /* backgroundColors.swift */; };
+		59642B5D1E21BBE2001C7008 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59642B5A1E21BBE2001C7008 /* MainViewController.swift */; };
+		59642B5E1E21BBE2001C7008 /* questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59642B5B1E21BBE2001C7008 /* questions.swift */; };
+		59642B601E21F3F4001C7008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59642B5F1E21F3F4001C7008 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		59642B441E21BB6A001C7008 /* PopQuestion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopQuestion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59642B471E21BB6A001C7008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59642B491E21BB6A001C7008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59642B4C1E21BB6A001C7008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59642B4E1E21BB6A001C7008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		59642B511E21BB6A001C7008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59642B531E21BB6A001C7008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59642B591E21BBE2001C7008 /* backgroundColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backgroundColors.swift; sourceTree = "<group>"; };
+		59642B5A1E21BBE2001C7008 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		59642B5B1E21BBE2001C7008 /* questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = questions.swift; sourceTree = "<group>"; };
+		59642B5F1E21F3F4001C7008 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				59642B471E21BB6A001C7008 /* AppDelegate.swift */,
-				59642B491E21BB6A001C7008 /* ViewController.swift */,
+				59642B5A1E21BBE2001C7008 /* MainViewController.swift */,
+				59642B5B1E21BBE2001C7008 /* questions.swift */,
+				59642B591E21BBE2001C7008 /* backgroundColors.swift */,
 				59642B4B1E21BB6A001C7008 /* Main.storyboard */,
 				59642B4E1E21BB6A001C7008 /* Assets.xcassets */,
-				59642B501E21BB6A001C7008 /* LaunchScreen.storyboard */,
 				59642B531E21BB6A001C7008 /* Info.plist */,
+				59642B5F1E21F3F4001C7008 /* LaunchScreen.storyboard */,
 			);
 			path = PopQuestion;
 			sourceTree = "<group>";
@@ -96,7 +102,7 @@
 				TargetAttributes = {
 					59642B431E21BB6A001C7008 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VNA55J4REY;
+						DevelopmentTeam = WZV594TB5J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,7 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59642B521E21BB6A001C7008 /* LaunchScreen.storyboard in Resources */,
+				59642B601E21F3F4001C7008 /* LaunchScreen.storyboard in Resources */,
 				59642B4F1E21BB6A001C7008 /* Assets.xcassets in Resources */,
 				59642B4D1E21BB6A001C7008 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59642B4A1E21BB6A001C7008 /* ViewController.swift in Sources */,
+				59642B5C1E21BBE2001C7008 /* backgroundColors.swift in Sources */,
+				59642B5E1E21BBE2001C7008 /* questions.swift in Sources */,
 				59642B481E21BB6A001C7008 /* AppDelegate.swift in Sources */,
+				59642B5D1E21BBE2001C7008 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,14 +159,6 @@
 				59642B4C1E21BB6A001C7008 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		59642B501E21BB6A001C7008 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				59642B511E21BB6A001C7008 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -259,10 +259,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VNA55J4REY;
+				DEVELOPMENT_TEAM = WZV594TB5J;
 				INFOPLIST_FILE = PopQuestion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ikemattice.PopQuestion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikemattice.popquestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,10 +273,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VNA55J4REY;
+				DEVELOPMENT_TEAM = WZV594TB5J;
 				INFOPLIST_FILE = PopQuestion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ikemattice.PopQuestion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ikemattice.popquestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -300,6 +302,7 @@
 				59642B581E21BB6A001C7008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
