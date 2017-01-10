@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
         
 //        self.view.addSubview(button)
         
-        
+        //update
         getQuestion(previousQuestion: nil)
         setBackgroundColor(previousColor: nil)
     }
