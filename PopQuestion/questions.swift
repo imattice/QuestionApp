@@ -12,7 +12,7 @@ var questions: [String] = [
     "If you were a ghost, what would you do?",
     "When do you feel the most confident and why?",
 //]
-
+//
 //var photoQuestions = [
     "What is the one thing you would like to change about yourself?",
     "What is on your bucket list for the next 365 days?",
@@ -20,7 +20,7 @@ var questions: [String] = [
     "If you had to choose to live without one of your five senses, which would you give up?",
     "What is your idea of the perfect first date?",
 //  ]
-
+//
 //var morequestions = [
     "Which parent are you closer to and why?",
     "When was the last time you broke someone’s heart?",
@@ -61,7 +61,7 @@ var questions: [String] = [
     
     "Would you rather read an eBook or a paper book?  Why?",
     "Would you rather go to a play or musical?  Why?",
-    "Would you rather go to the live theatre or a movie? Why?",
+    "Would you rather go to a live theatre performance or a movie? Why?",
     "Would you rather hike or bike?  Why?",
     "Would you rather travel by plane, train, or automobile? Why?",
     "Would you rather go to a comedy club or a dance club?  Why?",
@@ -71,7 +71,7 @@ var questions: [String] = [
     
     "If money were no object, what would you do all day?",
     "What was your favorite activity in gym class?",
-    "Who is your favorite author",
+    "Who is your favorite author?",
     "What has been your favorite challenge?",
     "What is one thing that should be taught in school that isn't already?",
     "What are 5 things someone would immediately notice if they walked in your front door?",
@@ -89,7 +89,7 @@ var questions: [String] = [
     "Alternate sharing 5 characteristics you look for in a friend or partner.",
     "Alternate sharing 5 positive features about each other.",
     "How close is your family?",
-    "Make 3 true statements starting with the word \"we\"",
+    "Make 3 true statements starting with the word \"we\".",
     "Complete the sentence: \"I wish I had someone with whom I could share...\"",
     "Share an embarassing moment in your life.",
     "When did you last cry in front of another person?  By yourself?  Why?",
@@ -101,7 +101,7 @@ var questions: [String] = [
     "What is the craziest thing you've ever done in the name of love?",
     "What was your favorite subject in school?",
     "Do you collect anything?",
-    "Which of your five senses would you say is your strongest? Why",
+    "Which of your five senses would you say is your strongest? Why?",
     "What do you do to keep fit?",
     "What are 3 things you think of most each day?",
     "If you had a warning label, what would yours say?",

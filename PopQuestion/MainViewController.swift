@@ -23,6 +23,39 @@ class MainViewController: UIViewController {
         
 //        self.view.addSubview(button)
         
+//        let bottomContstraint = NSLayoutConstraint(item: buttonLabel,
+//                                                   attribute: NSLayoutAttribute.bottomMargin,
+//                                                   relatedBy: NSLayoutRelation.equal,
+//                                                   toItem: view,
+//                                                   attribute: NSLayoutAttribute.bottom,
+//                                                   multiplier: 1,
+//                                                   constant: 140)
+//        let widthConstraint = NSLayoutConstraint(item: buttonLabel,
+//                                                attribute: NSLayoutAttribute.width,
+//                                                relatedBy: NSLayoutRelation.equal,
+//                                                toItem: nil,
+//                                                attribute: NSLayoutAttribute.notAnAttribute,
+//                                                multiplier: 1,
+//                                                constant: 110)
+//        let heightConstraint = NSLayoutConstraint(item: buttonLabel,
+//                                                  attribute: NSLayoutAttribute.height,
+//                                                  relatedBy: NSLayoutRelation.equal,
+//                                                  toItem: nil,
+//                                                  attribute: NSLayoutAttribute.notAnAttribute,
+//                                                  multiplier: 1,
+//                                                  constant: 40)
+//        let centerConstraint = NSLayoutConstraint(item: buttonLabel,
+//                                                  attribute: NSLayoutAttribute.centerX,
+//                                                  relatedBy: NSLayoutRelation.equal,
+//                                                  toItem: view,
+//                                                  attribute: NSLayoutAttribute.centerX,
+//                                                  multiplier: 1,
+//                                                  constant: 0)
+//        
+//        buttonLabel.translatesAutoresizingMaskIntoConstraints = false
+//        buttonLabel.addConstraints([bottomContstraint, widthConstraint, heightConstraint, centerConstraint])
+        
+        
         //update
         getQuestion(previousQuestion: nil)
         setBackgroundColor(previousColor: nil)
@@ -82,6 +115,7 @@ extension MainViewController {
             textShadow.shadowOffset = CGSize(width: 3, height: 3)
             textShadow.shadowColor = UIColor.gray
 
+        
         let attributes = [
             NSFontAttributeName: UIFont.systemFont(ofSize: 24.0),
             NSForegroundColorAttributeName: UIColor.white,
@@ -89,6 +123,9 @@ extension MainViewController {
         ]
         let attributedQuestion = NSAttributedString(string: question, attributes: attributes)
         questionLabel.attributedText = attributedQuestion
+        
+        
+//        questionLabel.text = question
     }
 //    func updateQuestionLabel(withCurrentQuestion question: String) {
 //        questionLabel.text = question

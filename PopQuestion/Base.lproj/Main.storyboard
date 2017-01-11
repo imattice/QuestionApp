@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,13 +24,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pz-aI-Sik">
-                                <rect key="frame" x="40" y="195" width="334" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="40" y="205.66666666666666" width="334" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="4"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6D-c0-Ro7">
-                                <rect key="frame" x="152" y="556" width="110" height="40"/>
+                                <rect key="frame" x="152" y="576" width="110" height="40"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="HTY-Ni-Ybr"/>
@@ -51,17 +55,25 @@
                             <constraint firstItem="O6D-c0-Ro7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5i3-U9-CBd"/>
                             <constraint firstItem="9pz-aI-Sik" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="JNb-yq-aE4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9pz-aI-Sik" secondAttribute="trailing" constant="20" id="Wrg-h5-cMu"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O6D-c0-Ro7" secondAttribute="bottom" constant="140" id="cgw-1P-xAB"/>
-                            <constraint firstItem="9pz-aI-Sik" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="175" id="dMX-oH-8Hv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O6D-c0-Ro7" secondAttribute="centerY" constant="140" id="cgw-1P-xAB"/>
+                            <constraint firstItem="9pz-aI-Sik" firstAttribute="centerY" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="dMX-oH-8Hv"/>
+                            <constraint firstItem="9pz-aI-Sik" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="yO7-5N-ZI8"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="JNb-yq-aE4"/>
+                                <exclude reference="yO7-5N-ZI8"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <exclude reference="JNb-yq-aE4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="dMX-oH-8Hv"/>
+                                <include reference="yO7-5N-ZI8"/>
                             </mask>
                         </variation>
                     </view>
