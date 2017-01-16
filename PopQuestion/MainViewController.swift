@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreGraphics
 
 class MainViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
@@ -57,51 +58,62 @@ class MainViewController: UIViewController {
         
         
         //update
-        getQuestion(previousQuestion: nil)
-        setBackgroundColor(previousColor: nil)
+        getQuestion(previousQuestion: nil, animated: false)
+        setBackgroundColor(previousColor: nil, animated: false)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     @IBAction func next(_ sender: UIButton) {
-        getQuestion(previousQuestion: self.questionLabel.text)
-        setBackgroundColor(previousColor: self.view.backgroundColor)
+        getQuestion(previousQuestion: self.questionLabel.text, animated: true)
+        setBackgroundColor(previousColor: self.view.backgroundColor, animated: true)
         
     }
 
 }
 
 extension MainViewController {
-    func getQuestion(previousQuestion: String?) {
+    func getQuestion(previousQuestion: String?, animated: Bool) {
         let randomIndex = Int(arc4random_uniform(UInt32(sessionQuestions.count)))
             
         let question = sessionQuestions[randomIndex]
         //if question was the previous question, choose a new question
         if previousQuestion != nil, question == previousQuestion {
             print("question was the same")
-            getQuestion(previousQuestion: previousQuestion)
+            getQuestion(previousQuestion: previousQuestion, animated: animated)
         } else {
             sessionQuestions.remove(at: randomIndex)
             if sessionQuestions.count == 0 {
                 sessionQuestions = questions
                 print("questions refreshed")
             }
-            self.updateQuestionLabel(withCurrentQuestion: question)
+            self.updateQuestionLabel(withCurrentQuestion: question, animated: animated)
         }
     }
 
-    func setBackgroundColor(previousColor: UIColor?) {
+    func setBackgroundColor(previousColor: UIColor?, animated: Bool) {
         let randomIndex = Int(arc4random_uniform(UInt32(backgroundColors.count)))
         let color = backgroundColors[randomIndex]
         
         if previousColor != nil, color == previousColor! {
             print("color was the same")
-            setBackgroundColor(previousColor: color)
+            setBackgroundColor(previousColor: color, animated: animated)
         } else {
-            self.view.backgroundColor = color
+            if animated {
+            UIView.animate(withDuration: 0.1, animations: {
+                self.view.backgroundColor = color
+            }, completion: nil)
+            } else {
+                self.view.backgroundColor = color
+            }
         }
     }
     func getBackgroundComplimentColor() -> UIColor {
@@ -109,7 +121,7 @@ extension MainViewController {
         
         return color
     }
-    func updateQuestionLabel(withCurrentQuestion question: String) {
+    func updateQuestionLabel(withCurrentQuestion question: String, animated: Bool) {
         let textShadow = NSShadow()
             textShadow.shadowBlurRadius = 2
             textShadow.shadowOffset = CGSize(width: 3, height: 3)
@@ -121,15 +133,25 @@ extension MainViewController {
             NSForegroundColorAttributeName: UIColor.white,
             NSShadowAttributeName: textShadow
         ]
-        let attributedQuestion = NSAttributedString(string: question, attributes: attributes)
-        questionLabel.attributedText = attributedQuestion
+        let attributedQuestion = NSAttributedString(string: question,
+                                                    attributes: attributes)
+            questionLabel.attributedText = attributedQuestion
         
+            questionLabel.transform = questionLabel.transform.scaledBy(x: 0.9, y: 0.9)
+        if animated {
+            UIView.animate(withDuration: 0.5,
+                           delay: 0,
+                           usingSpringWithDamping: 0.1,
+                           initialSpringVelocity: 1.0,
+                           options: [.curveEaseInOut],
+                           animations: {
+                                //self.questionLabel.frame = originalFrame
+                            self.questionLabel.transform = self.questionLabel.transform.scaledBy(x: 1.1, y: 1.1)
+
+                            }, completion: nil  )
+        }
         
-//        questionLabel.text = question
     }
-//    func updateQuestionLabel(withCurrentQuestion question: String) {
-//        questionLabel.text = question
-//    }
 
 }
 
