@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        NewRelic.start(withApplicationToken: "AA6266e0442f1b9a0b2293a3dde38834b35b048d47")
         // Override point for customization after application launch.
         return true
     }

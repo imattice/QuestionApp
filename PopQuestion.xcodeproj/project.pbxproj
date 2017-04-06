@@ -14,10 +14,14 @@
 		7FF765C21E1AD51000AA8DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF765C11E1AD51000AA8DDF /* Assets.xcassets */; };
 		7FF765C51E1AD51000AA8DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF765C31E1AD51000AA8DDF /* LaunchScreen.storyboard */; };
 		7FF765CD1E1AD53500AA8DDF /* questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF765CC1E1AD53500AA8DDF /* questions.swift */; };
+		95AD35B5A55B050E20786E5E /* Pods_PopQuestion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89F66727063CFAC3790F428 /* Pods_PopQuestion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A523FDD6BCCCF147800DA51 /* Pods-PopQuestion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopQuestion.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopQuestion/Pods-PopQuestion.release.xcconfig"; sourceTree = "<group>"; };
 		593690DE1E1AFBB000CF8D80 /* backgroundColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backgroundColors.swift; sourceTree = "<group>"; };
+		63A65C52C8692502E60E87A2 /* Pods-PopQuestion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopQuestion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopQuestion/Pods-PopQuestion.debug.xcconfig"; sourceTree = "<group>"; };
+		7FDDCD191E97042C00E73664 /* PopQuestion-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PopQuestion-Bridging-Header.h"; sourceTree = "<group>"; };
 		7FF765B71E1AD51000AA8DDF /* PopQuestion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopQuestion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF765BA1E1AD51000AA8DDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FF765BC1E1AD51000AA8DDF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +30,7 @@
 		7FF765C41E1AD51000AA8DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FF765C61E1AD51000AA8DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FF765CC1E1AD53500AA8DDF /* questions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = questions.swift; sourceTree = "<group>"; };
+		E89F66727063CFAC3790F428 /* Pods_PopQuestion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopQuestion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +38,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95AD35B5A55B050E20786E5E /* Pods_PopQuestion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A7ECA5BF024E588E5D8F30E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E89F66727063CFAC3790F428 /* Pods_PopQuestion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7FF765AE1E1AD50D00AA8DDF = {
 			isa = PBXGroup;
 			children = (
+				7FDDCD191E97042C00E73664 /* PopQuestion-Bridging-Header.h */,
 				7FF765B91E1AD51000AA8DDF /* Nice to Meet You */,
 				7FF765B81E1AD51000AA8DDF /* Products */,
+				CF968B9379DF45C3A2CFBB33 /* Pods */,
+				2A7ECA5BF024E588E5D8F30E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +95,15 @@
 			name = data;
 			sourceTree = "<group>";
 		};
+		CF968B9379DF45C3A2CFBB33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63A65C52C8692502E60E87A2 /* Pods-PopQuestion.debug.xcconfig */,
+				4A523FDD6BCCCF147800DA51 /* Pods-PopQuestion.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +111,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FF765C91E1AD51000AA8DDF /* Build configuration list for PBXNativeTarget "PopQuestion" */;
 			buildPhases = (
+				AC45523616025CEE098BE691 /* [CP] Check Pods Manifest.lock */,
 				7FF765B31E1AD50D00AA8DDF /* Sources */,
 				7FF765B41E1AD50D00AA8DDF /* Frameworks */,
 				7FF765B51E1AD50D00AA8DDF /* Resources */,
+				07648DA31B20D2CA45E7BC30 /* [CP] Embed Pods Frameworks */,
+				F1270AB024F709DD31CD30B8 /* [CP] Copy Pods Resources */,
+				7FDDCD1C1E9705FC00E73664 /* New Relic */,
 			);
 			buildRules = (
 			);
@@ -111,6 +141,7 @@
 					7FF765B61E1AD50D00AA8DDF = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = WZV594TB5J;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,6 +176,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07648DA31B20D2CA45E7BC30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopQuestion/Pods-PopQuestion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FDDCD1C1E9705FC00E73664 /* New Relic */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "New Relic";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		AC45523616025CEE098BE691 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1270AB024F709DD31CD30B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopQuestion/Pods-PopQuestion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7FF765B31E1AD50D00AA8DDF /* Sources */ = {
@@ -273,8 +366,10 @@
 		};
 		7FF765CA1E1AD51000AA8DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63A65C52C8692502E60E87A2 /* Pods-PopQuestion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Mattice (3975QUNH8Q)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WZV594TB5J;
@@ -283,14 +378,18 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikemattice.PopQuestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PopQuestion-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		7FF765CB1E1AD51000AA8DDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A523FDD6BCCCF147800DA51 /* Pods-PopQuestion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Mattice (3975QUNH8Q)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WZV594TB5J;
@@ -299,6 +398,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikemattice.PopQuestion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PopQuestion-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
